@@ -13,6 +13,7 @@ targets=(
     test_yenc
     test_wirehair
     test_logger
+    test_nntp
 )
 for target in "${targets[@]}"; do
     cmake --build build/tests --target "$target"

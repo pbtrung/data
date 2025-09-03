@@ -40,6 +40,7 @@ add_executable(data
     src/wirehair/wirehair.cpp
     src/yenc.c
     src/apr_logger.c
+    src/nntp.c
 )
 target_include_directories(data PRIVATE ${COMMON_INCLUDE_DIRS})
 target_link_directories(data PRIVATE ${COMMON_LINK_DIRS})
@@ -62,10 +63,15 @@ add_executable(test_logger
     tests/test_logger.c
     src/apr_logger.c
 )
+add_executable(test_nntp
+    tests/test_nntp.c
+    src/nntp.c
+)
 set(TEST_LIST
     test_yenc
     test_wirehair
     test_logger
+    test_nntp
 )
 foreach(TEST ${TEST_LIST})
     target_include_directories(${TEST} PRIVATE ${COMMON_INCLUDE_DIRS})
