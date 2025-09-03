@@ -32,7 +32,6 @@ list(APPEND COMMON_INCLUDE_DIRS include)
 list(APPEND COMMON_INCLUDE_DIRS include/wirehair)
 list(APPEND COMMON_INCLUDE_DIRS include/unity)
 
-
 add_executable(data
     src/main.c
     src/wirehair/WirehairCodec.cpp
