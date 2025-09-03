@@ -1,0 +1,9 @@
+Bootstrap: docker
+From: alpine:edge
+
+%post
+    apk update
+    apk --no-cache upgrade
+    apk --no-cache add alpine-sdk bash fish clang20-extra-tools cmake gdb \
+        apr-dev apr-util-dev openssl-dev
+        

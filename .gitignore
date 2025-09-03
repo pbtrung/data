@@ -53,3 +53,12 @@ dkms.conf
 
 # debug information files
 *.dwo
+
+# Misc
+*.json
+*.db
+*.sif
+*.csv
+
+build/
+tmp/
